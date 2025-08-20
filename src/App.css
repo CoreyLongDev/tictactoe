@@ -1,0 +1,25 @@
+#title {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: min(80vw, 80vh);
+    width: min(80vw, 80vh);
+    gap: 25px;
+}
+
+.cell {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+#copyright {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
