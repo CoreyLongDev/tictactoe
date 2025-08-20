@@ -1,4 +1,10 @@
+:root {
+  --main-bg: #595252;
+  --chalk-color: #F1EAF5;
+}
+
 body {
+  background-color: var(--main-bg);
   display: flex;
   justify-content: center;
   align-items: center;

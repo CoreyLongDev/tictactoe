@@ -1,5 +1,8 @@
 #title {
+    font-size: clamp(2rem, 5vmin, 5rem);
     text-align: center;
+    color: var(--chalk-color);
+    margin-bottom: 10vh;
 }
 
 .board {
@@ -8,18 +11,40 @@
     grid-template-rows: repeat(3,1fr);
     height: min(80vw, 80vh);
     width: min(80vw, 80vh);
-    gap: 25px;
+    gap: 8px;
+    background-color: var(--chalk-color);
 }
 
-.cell {
+.cells {
     color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
+    border: 1px solid var(--chalk-color);
+    background-color: var(--main-bg);
 }
+
+#cellOne, #cellFour, #cellSeven {
+    border-left: none;
+}
+
+#cellSeven, #cellEight, #cellNine {
+    border-bottom: none;
+}
+
+#cellThree, #cellSix, #cellNine {
+    border-right: none;
+}
+
+#cellOne, #cellTwo, #cellThree {
+    border-top: none;
+}
+
 #copyright {
-    font-size: 12px;
+    margin-top: 5vh;
+    font-size: 14px;
+    color: var(--chalk-color);
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
 }
