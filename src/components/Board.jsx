@@ -1,18 +1,15 @@
-function Board() {
+import { useState } from "react";
 
-    return(
-        <div className="board">
-            <div className="cells" id="cellOne">1</div>
-            <div className="cells" id="cellTwo">2</div>
-            <div className="cells" id="cellThree">3</div>
-            <div className="cells" id="cellFour">4</div>
-            <div className="cells" id="cellFive">5</div>
-            <div className="cells" id="cellSix">6</div>
-            <div className="cells" id="cellSeven">7</div>
-            <div className="cells" id="cellEight">8</div>
-            <div className="cells" id="cellNine">9</div>
+export default function Board() {
+  const [board, setBoard] = useState(Array(9).fill(null));
+
+  return (
+    <div className="board">
+      {board.map((cell, i) => (
+        <div key={i} className="cells">
+          {cell || i + 1}
         </div>
-    )
+      ))}
+    </div>
+  );
 }
-
-export default Board;
