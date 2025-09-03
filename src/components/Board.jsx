@@ -41,6 +41,10 @@ export default function Board() {
 
 
   return (
+    <>
+          <button className="reset-btn" onClick={resetGame}>
+        Reset Game
+      </button>
     <div className="board">
       {board.map((cell, i) => (
         <div
@@ -52,5 +56,6 @@ export default function Board() {
         </div>
       ))}
     </div>
+    </>
   );
 }

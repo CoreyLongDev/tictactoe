@@ -52,3 +52,16 @@
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
 }
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: var(--chalk-color);
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #ddd;
+}
